@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>Wander Vermont</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('PONYO.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      font-family: sans-serif;
+    }
+
+    .quote-box {
+      margin: 40px auto;
+      max-width: 600px;
+      padding: 25px;
+      background-color: #fffdd0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      color: #333;
+    }
+
+    .main-content {
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .shimmer-header {
+      margin-top: 0;
+    }
+
+    .links-section {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-link {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .social-link:hover {
+      text-decoration: underline;
+    }
+
+    /* YOUR ORIGINAL NAVBAR STYLES */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .nav-links a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar-inner {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+   
+  <div class="nav-wrapper">
+    <div class="nav-links">
+      <a href="index.html"class="active">home</a>
+      <a href="about.html" class="active">about</a>
+      <a href="spots.html" class="active"> spots </a>
+    </div>
+  </div>
+  </header>
+
+  <main class="main-content">
+    <h2 class="shimmer-header">Welcome to Wander Vermont</h2>
+    <p style="color: white">
+        You’ll find a mix of all things Burlington, from tucked-away towns to scenic spots you might’ve missed. 
+    </p>
+
+    <div class="quote-box">
+      <h1>💫 Your Daily Uplift</h1>
+      <blockquote id="quote">Loading quote...</blockquote>
+      <p id="author">—</p>
+      <button id="new-quote">New Quote</button>
+    </div>
+
+
+      <!-- Audio Player for Live Radio -->
+      <audio controls>
+        <source src="strangers.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- You can add more customizations like play/pause buttons, volume control, etc. -->
+    </div>
+  </main>
+
+    <div class="links-section">
+      <a href="https://github.com/Bsmith101" class="social-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/Brandolyn Smith" class="social-link">LinkedIn</a>
+      <a href="https://instagram.com/Brandolyn.s" class="social-link">Instagram</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

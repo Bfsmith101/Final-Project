@@ -1,0 +1,821 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfaf6;
+  color: #333;
+}
+
+/* NAV BAR STYLING */
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f4f8;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #d6dbe0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.nav-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #4e6e58;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4e6e58;
+  background-color: #ffffff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-links a:hover {
+  background-color: #ddebe1;
+  transform: translateY(-2px);
+}
+
+/* MOBILE STACKING */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-content h2 {
+  font-size: 2.25rem;
+  color: #4e6e58;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.main-content p {
+  font-size: 1.125rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* Optional vibe booster: background fade */
+body {
+  background: linear-gradient(135deg, #fffefc, #f0f7f4);
+}
+
+/* Fonts (if you're down to add) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+  /* Optional: Add a header */
+  .header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #4e6e58 ;
+    color: #4e6e58;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .header h1 {
+    margin-bottom: 1rem;
+  }
+
+  .header p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+  }
+ 
+  /* Optional: Add a footer */
+  .footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #f2f4f8;
+    color: #4e6e58;
+    font-size: 1rem;
+    border-top: 2px solid #d6dbe0;
+  }
+
+  .footer a {
+    color: #4e6e58;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Optional: Add a button */
+  .button {
+    background-color: #4e6e58;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .button:hover {
+    background-color: #3b5a45;
+    transform: translateY(-2px);
+  }
+
+ 
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfaf6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+/* Button styling */
+button {
+  background-color: #4e6e58;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #3b5a45;
+  transform: translateY(-2px);
+}
+
+body {
+  background-color: #f7f4f1;
+  font-family: 'Georgia', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.quote-box {
+  background-color: #fff;
+  border: 1px solid #e8e4e1;
+  border-radius: 12px;
+  padding: 1.2rem 1.5rem;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+h1 {
+  display: none; /* Hide the header to keep it minimal */
+}
+
+blockquote {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #4e5e53;
+  line-height: 1.4;
+  margin: 0;
+}
+
+#author {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.5rem;
+}
+
+button {
+  background-color: #dbeade;
+  color: #4e5e53;
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'Georgia', serif;
+}
+
+button:hover {
+  background-color: #c8dfcf;
+}
+
+.footer {
+  background-color: #f2f4f8;
+  color: #4e6e58;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  border-top: 2px solid #d6dbe0;
+  margin-top: 3rem;
+}
+
+.footer a {
+  color: #4e6e58;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #f2f4f8;
+  border-top: 2px solid #d6dbe0;
+}
+
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fefcf8;
+  margin: 0;
+  padding: 0;
+  color: #4e4e4e;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf6ee;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid #e7dcd2;
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6b5f4d;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #6b5f4d;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #b3927a;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #b3927a;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  padding: 2rem;
+}
+
+.about-card {
+  background-color: #fffdfa;
+  padding: 2.5rem;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f1eae3;
+  text-align: center;
+}
+
+.about-card h2 {
+  font-size: 2rem;
+  color: #4e6e58;
+  margin-bottom: 1.5rem;
+}
+
+.about-card p {
+  font-size: 1.1rem;
+  color: #5f5f5f;
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #a69c91;
+  background-color: #fdf6ee;
+  border-top: 1px solid #e7dcd2;
+}
+
+.footer a {
+  color: #a69c91;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  color: #c2b4a7;
+}
+
+.forgotten-faves {
+  background-color: #f4f7f5;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.forgotten-faves h2 {
+  color: #4e6e58;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.forgotten-faves p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.forgotten-faves form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.forgotten-faves input,
+.forgotten-faves textarea {
+  padding: 1rem;
+  border: 1px solid #d6dbe0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.forgotten-faves button {
+  background-color: #4e6e58;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.forgotten-faves button:hover {
+  background-color: #3c5644;
+}
+
+#recommendations-display {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fav-entry, .opinion-entry {
+  background-color: #fff;
+  border-left: 6px solid #aacdbb;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.fav-entry h4, .opinion-entry h4 {
+  margin-bottom: 0.5rem;
+  color: #4e6e58;
+}
+
+.fav-entry p, .opinion-entry p {
+  color: #555;
+  margin: 0;
+}
+/* Ensure the page takes up full height */
+html, body {
+margin: 0;
+padding: 0;
+height: 100%;
+overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Navbar styling */
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #4e6e58;
+padding: 1rem;
+z-index: 10; /* Keeps it on top */
+box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow */
+}
+
+/* Adjust the top padding for content so it doesn't hide under the navbar */
+main {
+padding-top: 100px; /* Space for the navbar (adjust for larger screens) */
+padding: 1rem;
+}
+
+/* Header */
+header {
+margin-top: 60px; /* Optional: for smooth alignment */
+}
+
+/* Footer */
+footer {
+padding: 1rem;
+background-color: #4e6e58;
+text-align: center;
+color: white;
+}
+
+/* General Layout Fixes */
+body, html {
+margin: 0;
+padding: 0;
+overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+main {
+margin-top: 80px; /* Ensure enough space for the navbar */
+padding: 1rem;
+}
+
+/* Responsive Design */
+/* General Layout Fixes */
+body, html {
+margin: 0;
+padding: 0;
+overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+main {
+margin-top: 80px; /* Ensure enough space for the navbar */
+padding: 1rem;
+}
+
+/* GENERAL NAVBAR FIXED POSITION */
+.nav-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #f2f4f8;
+padding: 1rem 2rem;
+z-index: 1000; /* Ensure the navbar is above other content */
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Styling for Navbar Title */
+.nav-title {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+color: #4e6e58;
+letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.nav-links {
+display: flex;
+justify-content: center;
+gap: 2rem;
+}
+
+.nav-links a {
+text-decoration: none;
+color: #4e6e58;
+font-weight: 600;
+padding: 0.5rem 1rem;
+border-radius: 12px;
+transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+background-color: #ddebe1;
+transform: translateY(-2px);
+}
+
+/* Adjust Content to Avoid Navbar Overlap */
+body {
+margin-top: 80px; /* Space for the fixed navbar */
+}
+
+/* Optional: Mobile Responsive */
+@media (max-width: 600px) {
+.nav-links {
+  flex-direction: column;
+  gap: 1rem;
+}
+}
+
+
+
+body {
+background-color: #fdfaf6;
+font-family: sans-serif;
+margin: 0;
+padding: 0;
+}
+
+/* Shared header styling */
+.main-header, .about-header {
+  background-color: #4e6e58  !important;  /* Background color from the index page */
+  color: #4e6e58 !important;  /* Text color from the index page */
+  text-align: center !important;
+  padding: 2rem 0 !important;  /* Padding for top and bottom */
+  font-size: 2.5rem !important;  /* Font size */
+  font-weight: 700 !important;  /* Font weight */
+  letter-spacing: 1px !important;  /* Letter spacing */
+  width: 100% !important;  /* Ensure it stretches the full width */
+  margin: 0 auto !important;  /* Center the header */
+}
+
+
+.links-section {
+  position: fixed; /* Keeps it fixed at the bottom */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: transparent; /* No background */
+  padding: 10px 0;
+  z-index: 10; /* Ensures it's above other content */
+}
+
+.social-link {
+  color: #fff; /* White color for the links */
+  margin: 0 15px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px; /* Size of the links */
+  opacity: 0.7; /* Slight transparency */
+}
+
+.social-link:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+
+
+/* Add shimmer effect with a white shadow for each letter */
+.shimmer-header {
+  font-size: 48px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: #fff; /* Text color */
+  position: relative;
+  display: inline-block;
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.7),  /* Soft white glow */
+    0 0 10px rgba(255, 255, 255, 0.7); /* Stronger white glow */
+  animation: shimmer 2s infinite linear;
+}
+
+/* Shimmer effect animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.5));
+  animation: shimmer 2s infinite linear;
+  clip-path: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+
+.stamp-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.stamp {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  transform: rotate(var(--angle));
+}
+
+/* stamp positions */
+.square-1 {
+  top: 10%;
+  left: 25%;
+  --angle: -10deg;
+}
+.square-2 {
+  top: 10%;
+  right: 25%;
+  --angle: 10deg;
+}
+.square-3 {
+  bottom: 15%;
+  left: 15%;
+  --angle: -5deg;
+}
+.square-4 {
+  bottom: 15%;
+  right: 15%;
+  --angle: 5deg;
+}
+.square-5 {
+  top: 40%;
+  left: 5%;
+  --angle: -8deg;
+}
+.square-6 {
+  top: 40%;
+  right: 5%;
+  --angle: 8deg;
+}
+
+.stamp {
+  position: absolute;
+  width: 90px;  /* Increased size */
+  height: 90px; /* Increased size */
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  transform: rotate(var(--angle));
+}
+
+
+
+.navbar {
+  background-color: rgba(255,255,255,0.6);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  padding: 8px 12px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #000;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 8px;
+}
+
+.spot-list {
+  list-style: none;
+  padding: 0;
+}
+
+.spot-list li {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.spot-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+.stamp {
+  width: 150px; /* or whatever size you prefer */
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.stamp:hover {
+  transform: scale(1.15);
+  z-index: 2;
+}
+
+.stamp-frame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  margin: 0;
+  padding: 0;
+}
+
+h2.shimmer-header {
+  margin-top: 0;
+}
+
+
+:root {
+  --green-accent: #81c784;
+  --green-light: #f6fff8;
+  --green-dark: #2e7d32;
+}
+
+.about-card img {
+  border-radius: 50%;
+  object-fit: cover;  /* Ensures the image fills the circle without distortion */
+  width: 80px;  /* Adjust the width to your preference */
+  height: 80px;  /* Adjust the height to your preference */
+}
+
+

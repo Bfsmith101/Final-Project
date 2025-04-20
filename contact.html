@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>about me</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      background-image: url('contact.png'); /* your image filename here */
+      background-size: cover; /* makes it fill the screen */
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    
+    .about-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 10px;
+      width: 100%;
+    }
+    
+    .about-card {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      width: 100%;
+      max-width: 1000px;  /* Set the max width here for large screens */
+      margin-bottom: 20px; /* Add margin to separate cards */
+    }
+    
+    .about-card .flex {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .about-card .flex-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .about-card img {
+      border-radius: 50%;
+    }
+
+    .heart {
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
+
+    /* Make sure cards are stacked vertically on smaller screens */
+    @media (max-width: 768px) {
+      .about-card {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about-card img {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <!-- For index page -->
+<header class="main-header">
+    <!-- Your header content -->
+</header>
+  
+  <!-- For about page -->
+  <header class="about-header">
+    <!-- Your header content -->
+  </header>
+  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="nav-wrapper">
+    <div class="nav-links">
+      <a href="index.html">home</a>
+      <a href="about.html" class="active">about</a>
+      <a href="spots.html"> spots </a>
+      <a href="contact.html"> contact </a>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <!-- Main Content -->
+  <main class="about-container">
+    <!-- First Card -->
+    <div class="about-card">
+      <div class="flex gap-4 items-center">
+        <img src="KIWI.jpg" alt="Logo" class="w-20 h-20 object-cover rounded-full border">
+      </div>
+
+      <div class="flex-column">
+        <h2 class="text-lg font-semibold">How to contact me!!</h2>
+
+        <div class="mt-2">
+          <span class="text-pink-500 text-sm font-medium">✨ Give me Feedback!! Let's talk about it over coffee ☕✨</span>
+          <br>
+            <div class="links-section">
+      <a href="https://github.com/Bsmith101" class="social-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/Brandolyn Smith" class="social-link">LinkedIn</a>
+      <a href="https://instagram.com/Brandolyn.s" class="social-link">Instagram</a>
+    </div>
+        </div>
+
+        <button class="mt-3 text-pink-500 text-2xl hover:text-pink-700 transition-all" onclick="toggleHeart(this)">
+          <span class="heart">&#9825;</span> <!-- Heart icon -->
+        </button>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+ 
+  <script>
+    function toggleHeart(button) {
+      button.classList.toggle("text-pink-700");  // Change color when clicked
+      const heart = button.querySelector(".heart");
+      if (button.classList.contains("text-pink-700")) {
+        heart.innerHTML = "❤️";  // Filled heart on click
+      } else {
+        heart.innerHTML = "&#9825;";  // Empty heart when not clicked
+      }
+    }
+  </script>
+<script>
+    const form = document.getElementById('suggestionForm');
+    const confirmation = document.getElementById('confirmationMsg');
+  
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      // Gather form data
+      const name = document.getElementById('placeName').value.trim();
+      const description = document.getElementById('placeDescription').value.trim();
+  
+      if (name && description) {
+        const suggestion = {
+          name: name,
+          description: description
+        };
+  
+        // Store in localStorage for now (simulate submission)
+        let suggestions = JSON.parse(localStorage.getItem('suggestions')) || [];
+        suggestions.push(suggestion);
+        localStorage.setItem('suggestions', JSON.stringify(suggestions));
+  
+        // Clear form + show confirmation
+        form.reset();
+        confirmation.style.display = 'block';
+        setTimeout(() => {
+          confirmation.style.display = 'none';
+        }, 4000);
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>
