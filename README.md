@@ -1,3 +1,2 @@
-Hii, I made this multi web page because it was one of my first goals when first joining this course.
-The inspirtaion is Vermont- I wanted the theme to be whimsical but also contain educational and interctaive 
-media!!
+Hi! I created this multi-page website because it was one of my very first goals when I joined this course.
+My inspiration was Vermont—I wanted to capture a whimsical feel while also including educational and interactive media throughout!
